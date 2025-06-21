@@ -1,0 +1,250 @@
+// Command Menu definition
+//
+// Basic Format:
+//		"<Bound Key>" "<Button Text>" "<Command sent to server>"
+//
+// Or you can check for a specific map:
+//		MAP <MapName> "<BoundKey>" "<Button Text>" "<Command sent to server>"
+// Where <MapName> is the name of the map, without the ".bsp".
+//
+// Buttons can also open up submenus, as follows:
+// {
+// 	"Some More Options",
+//	{
+//		...
+//	}
+// }
+//
+// Buttons preceded with "CUSTOM" are handled in special ways. They can only be moved 
+// around or deleted.
+//
+//
+// Limitations:
+//		Maximum of 40 menus.
+//		Maximum of 100 buttons per menu.
+
+//--------------------------------------------------------
+// Everything below here is editable
+
+" " "Bot Commands" 
+{
+
+	" " "Follow me"
+	{
+		" " "All" "say 1 follow me;wait;say 2 follow me;wait;say 3 follow me;wait;say 4 follow me;wait;say 5 follow me;wait;say 6 follow me;wait;say 7 follow me;"
+		" " "Bot 1" "say 1 follow me"
+		" " "Bot 2" "say 2 follow me"
+		" " "Bot 3" "say 3 follow me"
+		" " "Bot 4" "say 4 follow me"
+		" " "Bot 5" "say 5 follow me"
+		" " "Bot 6" "say 6 follow me"
+		" " "Bot 7" "say 7 follow me"
+	}
+	" " "Wait Here"
+	{
+		" " "All" "say 1 wait here;wait;say 2 wait here;wait;say 3 wait here;wait;say 4 wait here;wait;say 5 wait here;wait;say 6 wait here;wait;say 7 wait here;"
+		" " "Bot 1" "say 1 wait here"
+		" " "Bot 2" "say 2 wait here"
+		" " "Bot 3" "say 3 wait here"
+		" " "Bot 4" "say 4 wait here"
+		" " "Bot 5" "say 5 wait here"
+		" " "Bot 6" "say 6 wait here"
+		" " "Bot 7" "say 7 wait here"
+	}
+	" " "Use Tank"
+	{
+		" " "Bot 1" "say 1 use this tank"
+		" " "Bot 2" "say 2 use this tank"
+		" " "Bot 3" "say 3 use this tank"
+		" " "Bot 4" "say 4 use this tank"
+		" " "Bot 5" "say 5 use this tank"
+		" " "Bot 6" "say 6 use this tank"
+		" " "Bot 7" "say 7 use this tank"
+	}
+}
+
+" " "Bot Settings" 
+{
+
+	" " "Bots Suicide if Stuck"
+	{
+		" " "Enable (Default)" "as_command rcbot.suicide 1"
+		" " "Disable" "as_command rcbot.suicide 0"
+	}
+	" " "Bots Don't Shoot"
+	{
+		" " "Enable" "as_command rcbot.dont_shoot 1"
+		" " "Disable (Default)" "as_command rcbot.dont_shoot 0"
+	}
+	" " "Bots Heal NPCs"
+	{
+		" " "Enable (Default)" "as_command rcbot.heal_npc 1"
+		" " "Disable" "as_command rcbot.heal_npc 0"
+	}
+	" " "Bots Revive NPCs"
+	{
+		" " "Enable (Default)" "as_command rcbot.revive_npc 1"
+		" " "Disable" "as_command rcbot.revive_npc 0"
+	}
+}
+
+" " "Player Tools" 
+{
+	" " "Bot Cam"
+	{
+		" " "Enable" "as_command rcbot.botcam on"
+		" " "Disable (Default)" "as_command rcbot.botcam off"
+	}
+	" " "Cheats"
+	{
+		" " "God mode Toggle" "as_command rcbot.godmode"
+		" " "No Clip Toggle" "as_command rcbot.noclip"
+		" " "No Target Toggle" "as_command rcbot.notarget"
+		" " "No Touch Toggle" "as_command rcbot.notouch"
+		" " "Make Explosion" "as_command rcbot.explo 512"
+	}
+	" " "Set Gravity"
+	{
+		" " "Low" "sv_gravity 100"
+		" " "Medium" "sv_gravity 200"
+		" " "Default" "sv_gravity 800"
+	}
+}
+
+" " "Waypointing" 
+{
+	" " "Set Waypoint Flags"
+	{
+		" " "Movement"
+		{
+			" " "crouch" "as_command rcbot.waypoint_givetype crouch"
+			" " "crouchjump" "as_command rcbot.waypoint_givetype crouchjump"
+			" " "jump" "as_command rcbot.waypoint_givetype jump"
+			" " "humantower" "as_command rcbot.waypoint_givetype humantower"
+			" " "staynear" "as_command rcbot.waypoint_givetype staynear"
+			" " "wait" "as_command rcbot.waypoint_givetype wait"
+			" " "wait_noplayer" "as_command rcbot.waypoint_givetype wait_noplayer"
+			" " "water" "as_command rcbot.waypoint_givetype water"
+		}
+		" " "Navigation" 
+		{
+			" " "checkground" "as_command rcbot.waypoint_givetype checkground"
+			" " "openslater" "as_command rcbot.waypoint_givetype openslater"
+			" " "unreachable" "as_command rcbot.waypoint_givetype unreachable"
+		}
+		" " "Mission" 
+		{
+			" " "barney" "as_command rcbot.waypoint_givetype barney"
+			" " "end" "as_command rcbot.waypoint_givetype end"
+			" " "important" "as_command rcbot.waypoint_givetype important"
+			" " "scientist" "as_command rcbot.waypoint_givetype scientist"
+		}
+		" " "Moving Items"
+		{
+			" " "ladder" "as_command rcbot.waypoint_givetype ladder"
+			" " "lift" "as_command rcbot.waypoint_givetype lift"
+			" " "platform" "as_command rcbot.waypoint_givetype platform"
+			" " "teleport" "as_command rcbot.waypoint_givetype teleport"
+		}
+		" " "Usable Items" 
+		{
+			" " "tank" "as_command rcbot.waypoint_givetype tank"
+			" " "health" "as_command rcbot.waypoint_givetype health"
+			" " "armor" "as_command rcbot.waypoint_givetype armor"
+			" " "ammo" "as_command rcbot.waypoint_givetype ammo"
+			" " "weapon" "as_command rcbot.waypoint_givetype weapon"
+		}
+		" " "Misc" 
+		{
+			" " "defend" "as_command rcbot.waypoint_givetype defend"
+			" " "aiming" "as_command rcbot.waypoint_givetype aiming"
+			" " "pain" "as_command rcbot.waypoint_givetype pain"
+			" " "grapple" "as_command rcbot.waypoint_givetype grapple"
+			" " "pushable" "as_command rcbot.waypoint_givetype pushable"
+			" " "grenthrow" "as_command rcbot.waypoint_givetype grenthrow"
+		}
+	}
+	" " "Remove Waypoint Flags"
+	{
+		" " "Movement"
+		{
+			" " "crouch" "as_command rcbot.waypoint_removetype crouch"
+			" " "crouchjump" "as_command rcbot.waypoint_removetype crouchjump"
+			" " "jump" "as_command rcbot.waypoint_removetype jump"
+			" " "humantower" "as_command rcbot.waypoint_removetype humantower"
+			" " "staynear" "as_command rcbot.waypoint_removetype staynear"
+			" " "wait" "as_command rcbot.waypoint_removetype wait"
+			" " "wait_noplayer" "as_command rcbot.waypoint_removetype wait_noplayer"
+			" " "water" "as_command rcbot.waypoint_removetype water"
+		}
+		" " "Navigation" 
+		{
+			" " "checkground" "as_command rcbot.waypoint_removetype checkground"
+			" " "openslater" "as_command rcbot.waypoint_removetype openslater"
+			" " "unreachable" "as_command rcbot.waypoint_removetype unreachable"
+		}
+		" " "Mission" 
+		{
+			" " "barney" "as_command rcbot.waypoint_removetype barney"
+			" " "end" "as_command rcbot.waypoint_removetype end"
+			" " "important" "as_command rcbot.waypoint_removetype important"
+			" " "scientist" "as_command rcbot.waypoint_removetype scientist"
+		}
+		" " "Moving Items"
+		{
+			" " "ladder" "as_command rcbot.waypoint_removetype ladder"
+			" " "lift" "as_command rcbot.waypoint_removetype lift"
+			" " "platform" "as_command rcbot.waypoint_removetype platform"
+			" " "teleport" "as_command rcbot.waypoint_removetype teleport"
+		}
+		" " "Usable Items" 
+		{
+			" " "tank" "as_command rcbot.waypoint_removetype tank"
+			" " "health" "as_command rcbot.waypoint_removetype health"
+			" " "armor" "as_command rcbot.waypoint_removetype armor"
+			" " "ammo" "as_command rcbot.waypoint_removetype ammo"
+			" " "weapon" "as_command rcbot.waypoint_removetype weapon"
+		}
+		" " "Misc" 
+		{
+			" " "defend" "as_command rcbot.waypoint_removetype defend"
+			" " "aiming" "as_command rcbot.waypoint_removetype aiming"
+			" " "pain" "as_command rcbot.waypoint_removetype pain"
+			" " "grapple" "as_command rcbot.waypoint_removetype grapple"
+			" " "pushable" "as_command rcbot.waypoint_removetype pushable"
+			" " "grenthrow" "as_command rcbot.waypoint_removetype grenthrow"
+		}
+	}
+
+	" " "Edit Waypoints"
+	{
+		" " "Cut Waypoint" "as_command rcbot.waypoint_cut"
+		" " "Copy Waypoint" "as_command rcbot.waypoint_copy"
+		" " "Paste Waypoint" "as_command rcbot.waypoint_paste"
+		" " "Move1 Waypoint" "as_command rcbot.waypoint_move1"
+		" " "Move2 Waypoint" "as_command rcbot.waypoint_move2"
+	}
+	" " "Edit Paths"
+	{
+		" " "Remove All Paths To Waypoint" "as_command rcbot.pathwaypoint_remove_to"
+		" " "Remove All Paths From Waypoint" "as_command rcbot.pathwaypoint_remove_from"
+	}
+	" " "Map Waypoints"
+	{
+		" " "Load Waypoints" "as_command rcbot.waypoint_load"
+		" " "Save Waypoints" "as_command rcbot.waypoint_save"
+		" " "Clear ALL Waypoints" 
+		{
+			" " "Are you sure?" "as_command rcbot.waypoint_clear"
+		}
+	}
+
+}
+
+" " "Info"
+{
+	" " "Version 0.1.1" ""
+	" " "github.com/DNA-styx" ""
+}
+
+" " "Close" "slot10"
