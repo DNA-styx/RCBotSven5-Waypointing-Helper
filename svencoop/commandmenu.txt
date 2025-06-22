@@ -109,6 +109,22 @@
 		" " "Medium" "sv_gravity 200"
 		" " "Default" "sv_gravity 800"
 	}
+	" " "Teleport Players"
+	{
+		" " "Set Teleport Position" "as_command rcbot.teleport_set"
+		" " "Teleport Player to Position" 
+		{
+		" " "All Players" "as_command rcbot.teleport 1;wait;as_command rcbot.teleport 2;wait;as_command rcbot.teleport 3;wait;as_command rcbot.teleport 4;wait;as_command rcbot.teleport 5;wait;as_command rcbot.teleport 6;wait;as_command rcbot.teleport 7;wait;"
+		" " "Player 1" "as_command rcbot.teleport 1"
+		" " "Player 2" "as_command rcbot.teleport 2"
+		" " "Player 3" "as_command rcbot.teleport 3"
+		" " "Player 4" "as_command rcbot.teleport 4"
+		" " "Player 5" "as_command rcbot.teleport 5"
+		" " "Player 6" "as_command rcbot.teleport 6"
+		" " "Player 7" "as_command rcbot.teleport 7"
+		}
+	}
+
 }
 
 " " "Waypointing" 
