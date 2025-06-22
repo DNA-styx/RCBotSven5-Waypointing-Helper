@@ -14,7 +14,7 @@ Collection of binds and a command menu to help with waypoints maps with RCBotSve
 
 ![image](https://github.com/user-attachments/assets/36e6389e-4885-4db7-8a1f-f51ad124af01)
 
-![image](https://github.com/user-attachments/assets/9b689776-06af-41a3-a615-4e40795a63de)
+![image](https://github.com/user-attachments/assets/d4148892-9e80-4844-baab-1b12997c62b1)
 
 
 Setup
