@@ -115,13 +115,13 @@
 		" " "Teleport Player to Position" 
 		{
 		" " "All Players" "as_command rcbot.teleport 1;wait;as_command rcbot.teleport 2;wait;as_command rcbot.teleport 3;wait;as_command rcbot.teleport 4;wait;as_command rcbot.teleport 5;wait;as_command rcbot.teleport 6;wait;as_command rcbot.teleport 7;wait;"
-		" " "Player 1" "as_command rcbot.teleport 1"
-		" " "Player 2" "as_command rcbot.teleport 2"
-		" " "Player 3" "as_command rcbot.teleport 3"
-		" " "Player 4" "as_command rcbot.teleport 4"
-		" " "Player 5" "as_command rcbot.teleport 5"
-		" " "Player 6" "as_command rcbot.teleport 6"
-		" " "Player 7" "as_command rcbot.teleport 7"
+		" " "Player 1" "as_command rcbot.teleport 1; Say Player 1 Teleported"
+		" " "Player 2" "as_command rcbot.teleport 2; Say Player 2 Teleported"
+		" " "Player 3" "as_command rcbot.teleport 3; Say Player 3 Teleported"
+		" " "Player 4" "as_command rcbot.teleport 4; Say Player 4 Teleported"
+		" " "Player 5" "as_command rcbot.teleport 5; Say Player 5 Teleported"
+		" " "Player 6" "as_command rcbot.teleport 6; Say Player 6 Teleported"
+		" " "Player 7" "as_command rcbot.teleport 7; Say Player 7 Teleported"
 		}
 	}
 
