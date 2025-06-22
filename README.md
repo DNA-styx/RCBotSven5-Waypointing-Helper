@@ -1,11 +1,20 @@
 # RCBotSven5-Waypointing-Helper
+
+<div align="center">
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/DNA-styx/RCBotSven5-Waypointing-Helper">
+  <img src="https://img.shields.io/github/downloads/DNA-styx/RCBotSven5-Waypointing-Helper/total">
+  <img src="https://img.shields.io/github/issues/DNA-styx/RCBotSven5-Waypointing-Helper">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/DNA-styx/RCBotSven5-Waypointing-Helper">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DNA-styx/RCBotSven5-Waypointing-Helper">
+</div>
+<br>
 Collection of binds and a command menu to help with waypoints maps with RCBotSven5 
+<br>
+<br>
 
 ![image](https://github.com/user-attachments/assets/36e6389e-4885-4db7-8a1f-f51ad124af01)
 
 ![image](https://github.com/user-attachments/assets/9b689776-06af-41a3-a615-4e40795a63de)
-
-
 
 
 Setup
@@ -21,6 +30,9 @@ Setup
 Usage
 - Refer to the above key bind map
 - Press C to display the Command Menu
+
+RCBotSven5 Downloads
+- https://github.com/rcbotCheeseh/RCBotSven5
 
 Waypointing Tips
 - http://rcbot.bots-united.com/forums/index.php?showtopic=2223
