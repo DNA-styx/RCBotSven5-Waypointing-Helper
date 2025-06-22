@@ -30,7 +30,7 @@
 {
 	" " "Follow me"
 	{
-		" " "All" "say 1 follow me;wait;say 2 follow me;wait;say 3 follow me;wait;say 4 follow me;wait;say 5 follow me;wait;say 6 follow me;wait;say 7 follow me;"
+		" " "All" "say 1 follow me;say 2 follow me;say 3 follow me;say 4 follow me;say 5 follow me;say 6 follow me;say 7 follow me"
 		" " "Bot 1" "say 1 follow me"
 		" " "Bot 2" "say 2 follow me"
 		" " "Bot 3" "say 3 follow me"
@@ -41,7 +41,7 @@
 	}
 	" " "Wait Here"
 	{
-		" " "All" "say 1 wait here;wait;say 2 wait here;wait;say 3 wait here;wait;say 4 wait here;wait;say 5 wait here;wait;say 6 wait here;wait;say 7 wait here;"
+		" " "All" "say 1 wait here;say 2 wait here;say 3 wait here;say 4 wait here;say 5 wait here;say 6 wait here;say 7 wait here"
 		" " "Bot 1" "say 1 wait here"
 		" " "Bot 2" "say 2 wait here"
 		" " "Bot 3" "say 3 wait here"
@@ -74,6 +74,11 @@
 		" " "Enable" "as_command rcbot.dont_shoot 1"
 		" " "Disable (Default)" "as_command rcbot.dont_shoot 0"
 	}
+	" " "Bots Don't Move"
+	{
+		" " "Enable" "as_command rcbot.disable_util 1"
+		" " "Disable (Default)" "as_command rcbot.disable_util 0"
+	}
 	" " "Bots Heal NPCs"
 	{
 		" " "Enable (Default)" "as_command rcbot.heal_npc 1"
@@ -84,6 +89,7 @@
 		" " "Enable (Default)" "as_command rcbot.revive_npc 1"
 		" " "Disable" "as_command rcbot.revive_npc 0"
 	}
+	" " "Bots Do Not Move" "as_command rcbot.killbots"
 	" " "Kill All Bots" "as_command rcbot.killbots"
 	" " "Kick All Bots" "as_command rcbot.kickbots"
 }
@@ -114,8 +120,8 @@
 		" " "Set Teleport Position" "as_command rcbot.teleport_set"
 		" " "Teleport Player to Position" 
 		{
-		" " "All Players" "as_command rcbot.teleport 1;wait;as_command rcbot.teleport 2;wait;as_command rcbot.teleport 3;wait;as_command rcbot.teleport 4;wait;as_command rcbot.teleport 5;wait;as_command rcbot.teleport 6;wait;as_command rcbot.teleport 7;wait;"
-		" " "Player 1" "as_command rcbot.teleport 1; Say Player 1 Teleported"
+		" " "All Players" "as_command rcbot.teleport 1;as_command rcbot.teleport 2;as_command rcbot.teleport 3;as_command rcbot.teleport 4;as_command rcbot.teleport 5;as_command rcbot.teleport 6;as_command rcbot.teleport 7"
+		" " "Player 1" "as_command rcbot.teleport [m00]3gg; Say Player 1 Teleported"
 		" " "Player 2" "as_command rcbot.teleport 2; Say Player 2 Teleported"
 		" " "Player 3" "as_command rcbot.teleport 3; Say Player 3 Teleported"
 		" " "Player 4" "as_command rcbot.teleport 4; Say Player 4 Teleported"
