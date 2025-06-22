@@ -28,7 +28,6 @@
 
 " " "Bot Commands" 
 {
-
 	" " "Follow me"
 	{
 		" " "All" "say 1 follow me;wait;say 2 follow me;wait;say 3 follow me;wait;say 4 follow me;wait;say 5 follow me;wait;say 6 follow me;wait;say 7 follow me;"
@@ -63,9 +62,8 @@
 	}
 }
 
-" " "Bot Settings" 
+" " "Bot Controls"
 {
-
 	" " "Bots Suicide if Stuck"
 	{
 		" " "Enable (Default)" "as_command rcbot.suicide 1"
@@ -86,6 +84,8 @@
 		" " "Enable (Default)" "as_command rcbot.revive_npc 1"
 		" " "Disable" "as_command rcbot.revive_npc 0"
 	}
+	" " "Kill All Bots" "as_command rcbot.killbots"
+	" " "Kick All Bots" "as_command rcbot.kickbots"
 }
 
 " " "Player Tools" 
@@ -124,7 +124,6 @@
 		" " "Player 7" "as_command rcbot.teleport 7; Say Player 7 Teleported"
 		}
 	}
-
 }
 
 " " "Waypointing" 
@@ -254,12 +253,11 @@
 			" " "Are you sure?" "as_command rcbot.waypoint_clear"
 		}
 	}
-
 }
 
 " " "Info"
 {
-	" " "Version 0.1.1" ""
+	" " "Version 0.1.2" ""
 	" " "github.com/DNA-styx" ""
 }
 
