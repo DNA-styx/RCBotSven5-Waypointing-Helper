@@ -89,7 +89,6 @@
 		" " "Enable (Default)" "as_command rcbot.revive_npc 1"
 		" " "Disable" "as_command rcbot.revive_npc 0"
 	}
-	" " "Bots Do Not Move" "as_command rcbot.killbots"
 	" " "Kill All Bots" "as_command rcbot.killbots"
 	" " "Kick All Bots" "as_command rcbot.kickbots"
 }
@@ -120,14 +119,14 @@
 		" " "Set Teleport Position" "as_command rcbot.teleport_set"
 		" " "Teleport Player to Position" 
 		{
-		" " "All Players" "as_command rcbot.teleport 1;as_command rcbot.teleport 2;as_command rcbot.teleport 3;as_command rcbot.teleport 4;as_command rcbot.teleport 5;as_command rcbot.teleport 6;as_command rcbot.teleport 7"
-		" " "Player 1" "as_command rcbot.teleport 1; Say Player 1 Teleported"
-		" " "Player 2" "as_command rcbot.teleport 2; Say Player 2 Teleported"
-		" " "Player 3" "as_command rcbot.teleport 3; Say Player 3 Teleported"
-		" " "Player 4" "as_command rcbot.teleport 4; Say Player 4 Teleported"
-		" " "Player 5" "as_command rcbot.teleport 5; Say Player 5 Teleported"
-		" " "Player 6" "as_command rcbot.teleport 6; Say Player 6 Teleported"
-		" " "Player 7" "as_command rcbot.teleport 7; Say Player 7 Teleported"
+			" " "All Players" "as_command rcbot.teleport 1;as_command rcbot.teleport 2;as_command rcbot.teleport 3;as_command rcbot.teleport 4;as_command rcbot.teleport 5;as_command rcbot.teleport 6;as_command rcbot.teleport 7"
+			" " "Player 1" "as_command rcbot.teleport 1; Say Player 1 Teleported"
+			" " "Player 2" "as_command rcbot.teleport 2; Say Player 2 Teleported"
+			" " "Player 3" "as_command rcbot.teleport 3; Say Player 3 Teleported"
+			" " "Player 4" "as_command rcbot.teleport 4; Say Player 4 Teleported"
+			" " "Player 5" "as_command rcbot.teleport 5; Say Player 5 Teleported"
+			" " "Player 6" "as_command rcbot.teleport 6; Say Player 6 Teleported"
+			" " "Player 7" "as_command rcbot.teleport 7; Say Player 7 Teleported"
 		}
 	}
 }
@@ -151,25 +150,27 @@
 		{
 			" " "checkground" "as_command rcbot.waypoint_givetype checkground"
 			" " "openslater" "as_command rcbot.waypoint_givetype openslater"
+			" " "pain" "as_command rcbot.waypoint_givetype pain"
 			" " "unreachable" "as_command rcbot.waypoint_givetype unreachable"
 		}
 		" " "Mission" 
 		{
-			" " "barney" "as_command rcbot.waypoint_givetype barney"
+			" " "barney needed" "as_command rcbot.waypoint_givetype barney"
 			" " "end" "as_command rcbot.waypoint_givetype end"
 			" " "important" "as_command rcbot.waypoint_givetype important"
-			" " "scientist" "as_command rcbot.waypoint_givetype scientist"
+			" " "scientist needed" "as_command rcbot.waypoint_givetype scientist"
 		}
 		" " "Moving Items"
 		{
+			" " "grapple" "as_command rcbot.waypoint_givetype grapple"
 			" " "ladder" "as_command rcbot.waypoint_givetype ladder"
 			" " "lift" "as_command rcbot.waypoint_givetype lift"
 			" " "platform" "as_command rcbot.waypoint_givetype platform"
+			" " "pushable" "as_command rcbot.waypoint_givetype pushable"
 			" " "teleport" "as_command rcbot.waypoint_givetype teleport"
 		}
 		" " "Usable Items" 
 		{
-			" " "tank" "as_command rcbot.waypoint_givetype tank"
 			" " "health" "as_command rcbot.waypoint_givetype health"
 			" " "armor" "as_command rcbot.waypoint_givetype armor"
 			" " "ammo" "as_command rcbot.waypoint_givetype ammo"
@@ -179,10 +180,8 @@
 		{
 			" " "defend" "as_command rcbot.waypoint_givetype defend"
 			" " "aiming" "as_command rcbot.waypoint_givetype aiming"
-			" " "pain" "as_command rcbot.waypoint_givetype pain"
-			" " "grapple" "as_command rcbot.waypoint_givetype grapple"
-			" " "pushable" "as_command rcbot.waypoint_givetype pushable"
 			" " "grenthrow" "as_command rcbot.waypoint_givetype grenthrow"
+			" " "tank" "as_command rcbot.waypoint_givetype tank"
 		}
 	}
 	" " "Remove Waypoint Flags"
@@ -265,6 +264,7 @@
 {
 	" " "Version 0.1.3" ""
 	" " "github.com/DNA-styx" ""
+	" " "Eexec Waypoint.cfg" "exec waypoint.cfg"
 }
 
 " " "Close" "slot10"
