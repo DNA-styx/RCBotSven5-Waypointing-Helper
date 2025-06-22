@@ -121,7 +121,7 @@
 		" " "Teleport Player to Position" 
 		{
 		" " "All Players" "as_command rcbot.teleport 1;as_command rcbot.teleport 2;as_command rcbot.teleport 3;as_command rcbot.teleport 4;as_command rcbot.teleport 5;as_command rcbot.teleport 6;as_command rcbot.teleport 7"
-		" " "Player 1" "as_command rcbot.teleport [m00]3gg; Say Player 1 Teleported"
+		" " "Player 1" "as_command rcbot.teleport 1; Say Player 1 Teleported"
 		" " "Player 2" "as_command rcbot.teleport 2; Say Player 2 Teleported"
 		" " "Player 3" "as_command rcbot.teleport 3; Say Player 3 Teleported"
 		" " "Player 4" "as_command rcbot.teleport 4; Say Player 4 Teleported"
