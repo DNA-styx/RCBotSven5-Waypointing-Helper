@@ -22,13 +22,21 @@ Setup
 - Browse to your \svencoop\ folder
 - Take a back up of your commandmenu.txt file by renaming it from commandmenu.txt to commandmenu.txt.org
 - Copy waypoint.cfg and commandmenu.txt 
-- Start Sven Co-op and display the developer console and type 'exec waypoint.cfg'
+- Start Sven Co-op and display the developer console and type '**exec waypoint.cfg**'
 
 ![image](https://github.com/user-attachments/assets/241ad2cc-46a9-4c27-808a-51c11e5d7547)
 
 
 Usage
 - Refer to the above key bind map
+  - Press \ to display the maps's waypoints
+  - Press 6 while standing near a waypoint to view it's details
+  - Press + to add a waypoint and - to delete a waypoint
+  - To join two way points
+    - Stand on the first waypoint and press 7
+    - Walk to the second waypoint and press 9
+    - Do the same in reverse to make a two way path between the pair
+  - Press Enter to save the new waypoints
 - Press C to display the Command Menu
 
 RCBotSven5 Downloads
