@@ -1,4 +1,4 @@
-# RCBotSven5-Waypointing-Helper
+# RCBot Angelscript for Svencoop 5 Waypointing Helper
 
 <div align="center">
   <img alt="GitHub Release" src="https://img.shields.io/github/v/release/DNA-styx/RCBotSven5-Waypointing-Helper">
