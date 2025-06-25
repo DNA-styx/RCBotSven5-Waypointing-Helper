@@ -8,7 +8,7 @@
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DNA-styx/RCBotSven5-Waypointing-Helper">
 </div>
 <br>
-Collection of binds and a custom command menu to help with waypointing maps for RCBotSven5 
+Collection of binds and a custom command menu to help with waypointing maps for RCBotSven5 aka RCBot Angelscript for Svencoop 5
 <br>
 <br>
 
